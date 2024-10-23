@@ -1,10 +1,9 @@
 from coinbase.rest import RESTClient
+from coinbase.websocket import WSClient
 
-def create_client(api_key, api_secret):
-    try:
-        client = RESTClient(api_key=api_key, api_secret=api_secret)
-        print("Client created successfully.")
-        return client
-    except Exception as e:
-        print(f"Error creating client: {e}")
-        return None
+def rest_client(api_key, api_secret):
+    return RESTClient(api_key=api_key, api_secret=api_secret)
+
+def ws_client(api_key, api_secret, on_message):
+    return WSClient(api_key=api_key, api_secret=api_secret, on_message=on_message)
+
