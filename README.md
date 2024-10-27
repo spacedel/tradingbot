@@ -20,5 +20,5 @@ This is a Python-based trading bot that uses the **Coinbase Advanced API** to fe
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/tradingbot.git
+   git clone https://github.com/spacedel/tradingbot.git
 
